@@ -1,0 +1,86 @@
+/* Landing Page Styles */
+.landing-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?cs=srgb&dl=pexels-pixabay-36478.jpg&fm=jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text visibility */
+    z-index: -1;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button1 {
+    background-color: #dd5f9a;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #d76f9f;
+    transform: scale(1.05);
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    width: 10%;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+  }
+  
